@@ -1,0 +1,65 @@
+import { Crop } from '@/utils/storage';
+
+export const seedCrops: Omit<Crop, 'id' | 'createdAt' | 'updatedAt'>[] = [
+  {
+    name: 'Maize',
+    datePlanted: '2024-03-15',
+    acreage: 5.5,
+    expenses: 250000,
+    notes: 'Planted during optimal rainy season. Used improved seeds and fertilizer.',
+    confirmed: true,
+  },
+  {
+    name: 'Cassava',
+    datePlanted: '2024-04-10',
+    acreage: 3.2,
+    expenses: 180000,
+    notes: 'Disease-resistant variety. Expected harvest in 12-15 months.',
+    confirmed: true,
+  },
+  {
+    name: 'Rice',
+    datePlanted: '2024-05-20',
+    acreage: 2.8,
+    expenses: 320000,
+    notes: 'Lowland rice variety. Irrigation system installed.',
+    confirmed: false,
+  },
+  {
+    name: 'Yam',
+    datePlanted: '2024-02-28',
+    acreage: 4.0,
+    expenses: 450000,
+    notes: 'Traditional variety with high market demand. Mounds prepared manually.',
+    confirmed: true,
+  },
+  {
+    name: 'Tomatoes',
+    datePlanted: '2024-06-05',
+    acreage: 1.5,
+    expenses: 125000,
+    notes: 'Greenhouse cultivation. Hybrid seeds for better yield.',
+    confirmed: false,
+  },
+];
+
+export const nigerianCrops = [
+  'Maize',
+  'Cassava',
+  'Yam',
+  'Rice',
+  'Sorghum',
+  'Millet',
+  'Tomatoes',
+  'Peppers',
+  'Okra',
+  'Plantain',
+  'Cocoyam',
+  'Sweet Potato',
+  'Beans',
+  'Groundnut',
+  'Oil Palm',
+  'Cocoa',
+  'Cotton',
+  'Sugarcane',
+];
